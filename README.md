@@ -2,6 +2,10 @@
 #ReadMe
 
 #### About
+Simple Search yugioh card Using API Ygoprodeck in Jekyll
+
+Live Demo : https://rokhimin.github.io/rokhimin/jekyll-search-yugioh-card
+
 
 ## Contributing
 
