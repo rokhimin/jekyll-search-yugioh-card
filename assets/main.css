@@ -1,0 +1,25 @@
+/* Chrome, Safari */
+        ::-webkit-scrollbar {
+            width: 15px;
+            height: 15px;
+            }
+            ::-webkit-scrollbar-track-piece  {
+            background-color: #222222;
+            }
+            ::-webkit-scrollbar-thumb:vertical {
+            height: 30px;
+            background-color: #535955;
+            }
+            
+            #loading {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 24px;
+          font-weight: bold;
+        }
+        #card-info {
+          display: none;
+        }
