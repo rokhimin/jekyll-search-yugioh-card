@@ -2,82 +2,92 @@
 layout: default
 ---
 
-<div class="hero">
+<section class="hero is-medium">
   <div class="hero-body">
-      <div class="columns">
-          <div class="column">
-              <div class="card">
-                  <div class="card-content has-background-black-ter">
-                    <div class="content">
-                          <div class="columns">
-                              <div class="column is-one-fifth"></div>
-                              <div class="column is-half">
-                                  
-                          <h2 cleass="is-centered">Search Yu-Gi-Oh Card</h2>
-                                  <form id="card-form">
-                                      <input class="input" type="search" id="card-name" name="card-name" />
-                                      <div class="select is-small is-narrow">
-                                      <select id="monster-type">
-                                          <option value="">Type Card - All</option>
-                                          <option value="type=Effect Monster&">Effect Monster</option>
-                                          <option value="type=Spell Card&">Spell Card</option>
-                                          <option value="type=Trap Card&">Trap Card</option>
-                                          <option value="type=Flip Effect Monster&">Flip Effect Monster</option>
-                                          <option value="type=Fusion Monster&">Fusion Monster</option>
-                                          <option value="type=Gemini Monster&">Gemini Monster</option>
-                                          <option value="type=Normal Monster&">Normal Monster</option>
-                                          <option value="type=Normal Tuner Monster&">Normal Tuner Monster</option>
-                                          <option value="type=Ritual Monster&">Ritual Monster</option>
-                                          <option value="type=Ritual Effect Monster&">Ritual Effect Monster</option>
-                                          <option value="type=Spirit Monster&">Spirit Monster</option>
-                                          <option value="type=Synchro Monster&">Synchro Monster</option>
-                                          <option value="type=Synchro Tuner Monster&">Synchro Tuner Monster</option>
-                                          <option value="type=Token&">Token</option>
-                                          <option value="type=Toon Monster&">Toon Monster</option>
-                                          <option value="type=Tuner Monster&">Tuner Monster</option>
-                                          <option value="type=Union Effect Monster&">Union Effect Monster</option>
-                                          <option value="type=XYZ Monster&">XYZ Monster</option>
-                                          <option value="type=Link Monster&">Link Monster</option>
-                                          <option value="type=Pendulum Effect Monster&">Pendulum Effect Monster</option>
-                                          <option value="type=Pendulum Effect Fusion Monster&">Pendulum Effect Fusion Monster</option>
-                                          <option value="type=Pendulum Effect Ritual Monster&">Pendulum Effect Ritual Monster</option>
-                                          <option value="type=Pendulum Flip Effect Monster&">Pendulum Flip Effect Monster</option>
-                                          <option value="type=Pendulum Normal Monster&">Pendulum Normal Monster</option>
-                                          <option value="type=Pendulum Tuner Effect Monster&">Pendulum Tuner Effect Monster</option>
-                                          <option value="type=Synchro Pendulum Effect Monster&">Synchro Pendulum Effect Monster</option>
-                                          <option value="type=XYZ Pendulum Effect Monster&">XYZ Pendulum Effect Monster</option>
-                                        </select>
-                                        </div>
-                                        <div class="select is-small is-narrow">
-                                          <select id="sort-type">
-                                              <option value="">Sort by</option>
-                                              <option value="sort=new&">Newest</option>
-                                              <option value="sort=name&">Name</option>
-                                              <option value="sort=atk&">ATK</option>
-                                              <option value="sort=def&">DEF</option>
-                                              <option value="sort=level&">Level</option>
-                                              </select>
-                                          </div>
-                                      
-                              <div class="column is-one-fifth">
-                                  <input id="btn-load" class="button" type="submit" value="Search" />
-                                  
-                                  </form></div>
-                                  
-
-                              </div>
-
-                          </div>
-                    </div>
-                  </div>
-                </div>
+    <div class="container">
+      <h1 class="title is-1">
+        <i class="fas fa-dragon"></i> Search Yu-Gi-Oh Card 
+      </h1>
+      
+      <div class="search-container">
+        <form id="card-form">
+          <div class="form-group">
+            <label class="label" style="color: var(--text-color);">Card Name</label>
+            <div class="input-group">
+              <input class="input" type="search" id="card-name" name="card-name" placeholder="Enter card name..." />
+              <button id="btn-load" class="button" type="submit">
+                <i class="fas fa-search"></i> Search
+              </button>
+            </div>
           </div>
-        </div>
+          
+          <div class="columns">
+            <div class="column is-one-fifth">
+              <div class="form-group">
+                <label class="label" style="color: var(--text-color);">Card Type</label>
+                <div class="select is-small">
+                  <select id="monster-type">
+                    <option value="">All Card Types</option>
+                    <option value="type=Effect Monster&">Effect Monster</option>
+                    <option value="type=Spell Card&">Spell Card</option>
+                    <option value="type=Trap Card&">Trap Card</option>
+                    <option value="type=Flip Effect Monster&">Flip Effect Monster</option>
+                    <option value="type=Fusion Monster&">Fusion Monster</option>
+                    <option value="type=Gemini Monster&">Gemini Monster</option>
+                    <option value="type=Normal Monster&">Normal Monster</option>
+                    <option value="type=Normal Tuner Monster&">Normal Tuner Monster</option>
+                    <option value="type=Ritual Monster&">Ritual Monster</option>
+                    <option value="type=Ritual Effect Monster&">Ritual Effect Monster</option>
+                    <option value="type=Spirit Monster&">Spirit Monster</option>
+                    <option value="type=Synchro Monster&">Synchro Monster</option>
+                    <option value="type=Synchro Tuner Monster&">Synchro Tuner Monster</option>
+                    <option value="type=Token&">Token</option>
+                    <option value="type=Toon Monster&">Toon Monster</option>
+                    <option value="type=Tuner Monster&">Tuner Monster</option>
+                    <option value="type=Union Effect Monster&">Union Effect Monster</option>
+                    <option value="type=XYZ Monster&">XYZ Monster</option>
+                    <option value="type=Link Monster&">Link Monster</option>
+                    <option value="type=Pendulum Effect Monster&">Pendulum Effect Monster</option>
+                    <option value="type=Pendulum Effect Fusion Monster&">Pendulum Effect Fusion Monster</option>
+                    <option value="type=Pendulum Effect Ritual Monster&">Pendulum Effect Ritual Monster</option>
+                    <option value="type=Pendulum Flip Effect Monster&">Pendulum Flip Effect Monster</option>
+                    <option value="type=Pendulum Normal Monster&">Pendulum Normal Monster</option>
+                    <option value="type=Pendulum Tuner Effect Monster&">Pendulum Tuner Effect Monster</option>
+                    <option value="type=Synchro Pendulum Effect Monster&">Synchro Pendulum Effect Monster</option>
+                    <option value="type=XYZ Pendulum Effect Monster&">XYZ Pendulum Effect Monster</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <div class="column is-12">
+              <div class="form-group">
+                <label class="label" style="color: var(--text-color);">Sort By</label>
+                <div class="select is-small">
+                  <select id="sort-type">
+                    <option value="">Default</option>
+                    <option value="sort=new&">Newest</option>
+                    <option value="sort=name&">Name</option>
+                    <option value="sort=atk&">ATK</option>
+                    <option value="sort=def&">DEF</option>
+                    <option value="sort=level&">Level</option>
+                  </select>
+                </div>
+              </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
+<div id="loading"><img src="{{ site.files }}/assets/loading.gif" alt="Loading..." /></div>
 
-<div id="loading"><img src="{{ site.files }}/assets/loading.gif" /></div>
-<div id="card-info">
-</div> 
+<section class="section">
+  <div class="container">
+    <div id="card-info"></div>
+  </div>
+</section>
+
 <script src="{{ site.files }}/assets/yugioh.js"></script>

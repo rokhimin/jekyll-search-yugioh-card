@@ -1,9 +1,9 @@
 title: Search Yugioh Card | whdzera
 email: whdzera@gmail.com
-baseurl: "/jekyll-search-yugioh-card" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" 
+url: ""
 twitter_username: whdzera
-github_username:  rokhimin/jekyll-search-yugioh-card
+github_username:  rokhimin/search-yugioh-card
 
 permalink: /:title.rb
-files: "/jekyll-search-yugioh-card"
+files: ""
