@@ -1,9 +1,9 @@
 title: Search Yugioh Card | whdzera
 email: whdzera@gmail.com
-baseurl: "" 
+baseurl: "/search-yugioh-card" 
 url: ""
 twitter_username: whdzera
 github_username:  rokhimin/search-yugioh-card
 
 permalink: /:title.rb
-files: ""
+files: "/search-yugioh-card"
