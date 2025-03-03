@@ -2,14 +2,22 @@
 #ReadMe
 
 #### About
-Simple Search yugioh card Using API Ygoprodeck in Jekyll
+Simple Search yugioh card Using API Ygoprodeck | Jekyll
 
-Live Demo : https://rokhimin.github.io/jekyll-search-yugioh-card
+##### Library
+- Jekyll
+- Css : Bulma, Font-Awesome
+- Javascript : Jquery
+- Api : DB Ygoprodeck
 
+##### Live Demo  
+https://rokhimin.github.io/search-yugioh-card
+
+https://search-yugioh-card.vercel.app
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Rokhimin/jekyll-search-yugioh-card
+Bug reports and pull requests are welcome on GitHub at https://github.com/Rokhimin/search-yugioh-card
 /. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ## Development
